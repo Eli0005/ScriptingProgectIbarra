@@ -17,7 +17,7 @@ public class IFStatement : MonoBehaviour
     }
 
 
-    void TemperatureTest ()
+    void TemperatureTest()
     {
         //if the coffee's temperature is greater than the hottest drinking temperature...
         if (coffeeTemperature > hotlimitTemperature)
@@ -25,5 +25,15 @@ public class IFStatement : MonoBehaviour
             //...do this.
             print("coffee is too hot");
         }
-            //If it isn't, but the coffee temperature is less than the coldest drink temperture...
-            else if(coffeeTemperature < coldlimitTemperatureLimit)
+        //If it isn't, but the coffee temperature is less than the coldest drink temperture...
+        else if (coffeeTemperature < coldlimitTemperatureLimit)
+        {
+            //... do this.
+            print("coffee is just too cold.");
+        }
+        //If it is neither of those then...
+        else
+        {
+
+        }
+    }
